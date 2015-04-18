@@ -8,6 +8,9 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+    <script src="js/jQuery.autoSlider.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <section class="page-header">
@@ -19,6 +22,23 @@
     </section>
 
     <section class="main-content">
+      <div id="banner" class="banner">
+        <ul>
+            <li>
+              <img src="imgs/wood1.jpg" alt="">
+              <p>调整屏幕试一下</p>
+            </li>
+            <li>
+              <img src="imgs/wood2.jpg" alt="">
+              <p>Jquery.autoslider</p>
+            </li>
+            <li>
+              <img src="imgs/wood3.jpg" alt="">
+              <p><a href="https://github.com/zhengbowei">作者：Wayne Zheng</a></p>
+            </li>
+        </ul>
+      </div>
+
       <h3>
 <a id="如何使用" class="anchor" href="#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8" aria-hidden="true"><span class="octicon octicon-link"></span></a>如何使用？</h3>
 
@@ -104,5 +124,16 @@
           </script>
 
   </body>
+  <script>
+  $(function(){
+    $('.banner').autoSlider({
+      speed: 800, // 图片显示速度
+      delay: 3000, // 图片停留时间
+      dots: true, // 导航
+      stay: true, // 鼠标移入停留
+      fluid: true // 自适应
+    });
+  });
+  </script>
 </html>
 
