@@ -1,0 +1,12 @@
+@charset 'utf-8';
+body{margin:0;padding:0;font-family:'微软雅黑','Microsoft Yahei','宋体',serif}
+img{width:100%;border:0;vertical-align:middle}
+#other{width:1000px}
+.banner{position:relative;margin:0 auto}
+.banner ul,ol{padding:0;margin:0}
+.banner li{width:100%;list-style:none}
+.banner li p{position:absolute;margin:0;padding:0;left:0;top:50%;text-align:center;font-size:28px;height:38px;color:#fff;margin-top:-19px}
+.banner li a{text-decoration:none;color:#fff}
+#banner ol{width:72px;position:absolute;left:50%;bottom:10px;z-index:1000;margin-left:-36px;overflow:hidden}
+#banner ol li{float:left;background-color:#fff;color:#000;margin:2px;width:10px;height:10px;display:block;text-align:center;cursor:pointer;border-radius:50%;font-size:14px;text-indent:-999em;list-style:none}
+#banner ol li.active{background-color:orange;color:#fff}
